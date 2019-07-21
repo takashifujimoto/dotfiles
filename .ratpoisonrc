@@ -1,0 +1,13 @@
+exec conky
+exec dzen2
+
+
+# workspaces
+exec rpws init 3 -k
+bind F1 exec rpws 1
+bind F2 exec rpws 2
+bind F3 exec rpws 3
+set padding 0 24 0 0
+
+#set wallpaper
+exec feh --bg-scale Pictures/wallpapers/ocean.jpg
