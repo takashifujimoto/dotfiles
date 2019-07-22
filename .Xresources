@@ -49,8 +49,4 @@
 URxvt.font: xft:Source Code Pro:size=10
 URxvt.scrollBar: false
 URxvt.cursorColor: magenta
-URxvt.shading: 10 
-URxvt.depth:30
 URxvt.cursorBlink: true
-
-
