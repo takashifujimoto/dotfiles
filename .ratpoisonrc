@@ -26,6 +26,10 @@ set winname class
 
 
 #set wallpaper
-#exec feh --bg-scale Pictures/wallpapers/ocean.jpg
-exec feh --bg-scale Pictures/wallpapers/brain.png
+exec feh --bg-scale Pictures/wallpapers/ocean.jpg
+#exec feh --bg-scale Pictures/wallpapers/brain.png
+#exec feh --bg-scale Pictures/wallpapers/.png
 
+#Java Swing Applications
+#see https://wiki.archlinux.org/index.php/Ratpoison/#Java_Swing_Applications
+exec wmname LG3D
