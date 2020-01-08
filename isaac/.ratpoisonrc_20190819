@@ -1,0 +1,33 @@
+exec conky
+#exec dzen2
+
+
+# workspaces
+exec rpws init 6 -k
+bind F1 exec rpws 1
+bind F2 exec rpws 2
+bind F3 exec rpws 3
+bind F4 exec rpws 4
+bind F5 exec rpws 5
+bind F6 exec rpws 6
+
+#set padding 0 24 0 0
+set padding 0 0 0 0
+
+#set font
+
+set font -*-Droid Sans-11
+set bgcolor #2E3440
+set fgcolor #D8DEE9
+
+set transgravity nw
+set bargravity nw
+set inputwidth 800
+set winname class
+
+
+
+#set wallpaper
+#exec feh --bg-scale Pictures/wallpapers/ocean.jpg
+exec feh --bg-scale Pictures/wallpapers/minecraft/o1229961.png
+
