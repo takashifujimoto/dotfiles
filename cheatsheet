@@ -1,0 +1,41 @@
+* grep
+- [$ grep 'search_word' filename]   (grep find lines with "word' in the file)       | grep search
+- [$ grep -S word /etc/*]           (search FOR 'WORD' in all filES WITHIN /etc/ directory) | grep SEARCH 
+- [$ grep -R word /etc/*]           (search RECURSIVELY for 'word' in all files within /etc/ directory and subdirectory) | grep search 
+
+- resources:  linuxconfig.org/how-to-find-all-files-with-a-specific-text-using-linux-shell  | grep search files 
+* bash shell command
+
+- C-l  : 'clear'                  ([$ clear]  to onaji)                             |bash shell shortcut
+- C-d  : 'exit'                   ([$ exit]   same)                                 |bash shell shortcut
+- [$ find $location$ -name $regex$]  (under "home", find files that has 'test')     |bash shell
+- [$ ls -lh ]    ( -lh : long format with READABLE FILE SIZE)                       |bash shell
+
+- first column d: directory, -: file, l: symbolic link
+- [$ sudo ln -s /path/to/your/link /real/file]  mking symbolic link.
+
+* tmux
+- 
+
+
+
+
+* wget 
+- you can right click and copy $url$ in the browser then paste
+- [$ wget -c $url$]   ( -c 'continue' even there are errors.)          |wget
+- [$ wget -q $url$]   ( -q 'quiet', it does not show the status)       |wget
+
+* emacs
+
+- M-x ielm  (start ELISP>)     | emacs elisp lisp start repl
+- C-j       (execute elisp)    | emacs elisp lisp evaluate
+- C-x C-e   (eval-last-sexp, evaluates sexp before the cursor, and show result in mini-buffer)     | emacs elisp lisp  evaluate
+
+ressources: yohshiy.blog.fc2.com/blog-category-30.html
+
+
+* bashscript
+
+- sed -i '1s/^.*#//;s/\r$//' filename (fix broken shebang line by dos2unix) | no such file or direcotry #!/bin/bash
+
+

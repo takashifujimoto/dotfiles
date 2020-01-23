@@ -1,0 +1,24 @@
+ls
+ls
+cd
+ls
+cd .emacs.d/
+ls
+ls -al
+clear
+python
+echo "Hello"
+echo Hello
+echo "Hello"
+ee pi.py
+(length hi)
+clear
+length hi
+(+ 1 3)
++ 1 3
+* 3 (+ 1 3)
+lenth *
+touch 'and go.py'
+ls
+vim and\ go.py 
+exit
