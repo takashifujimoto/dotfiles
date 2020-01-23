@@ -10,35 +10,49 @@ exec conky
 #exec dzen2
 
 # workspaces
-exec rpws init 6 -k
+exec rpws init 4 -k
 bind F1 exec rpws 1
 bind F2 exec rpws 2
 bind F3 exec rpws 3
 bind F4 exec rpws 4
-bind F5 exec rpws 5
-bind F6 exec rpws 6
 
 
 ## Frames
-#set padding 0 24 0 0
-set padding 0 2 0 1
-set fgcolor #ffffff
-set bgcolor #505050
-set winname name
-set winfmt %s%8t
+set border 0
+set padding 0 0 0 17 
+#set fgcolor #ffffff
+#set bgcolor #505050
+#set bwcolor dig gray
 set bargravity n
 set barborder 0 
-set bwcolor dig gray
+set inputwidth   800
+set transgravity center
+#set winname      class
+set winname name
+set winfmt %s%8t
 
 #set font
 set font -*-Droid Sans-11
-set bgcolor #2E3440
-set fgcolor #D8DEE9
+#set bgcolor #2E3440
+#set fgcolor #D8DEE9
 
-set transgravity center
-set bargravity   nw
-set inputwidth   800
-set winname      class
+
+
+#aliases ??
+# What is this???
+#alias ls exec ratpoison -c "echo $(~/bin/rpls)"
+
+
+
+#workspaces
+gnew main
+gnewbg dev
+gnewbg web
+gnewbg mails
+gnewbg stuff
+gmerge default
+gdelete default
+
 
 
 ## binding  (CAPSLock as an escape key
@@ -46,10 +60,16 @@ set winname      class
 #escape F13
 
 #set wallpaper
-exec feh --bg-scale Pictures/wallpapers/ocean.jpg
+#exec feh --bg-scale Pictures/wallpapers/ocean.jpg
 #exec feh --bg-scale Pictures/wallpapers/brain.png
 #exec feh --bg-scale Pictures/wallpapers/.png
+exec feh --bg-scale Pictures/wallpapers/o3181026.png
 
 #Java Swing Applications
 #see https://wiki.archlinux.org/index.php/Ratpoison/#Java_Swing_Applications
-exec wmname LG3D
+#exec wmname LG3D
+
+
+definekey top C-M-e tmpwm evilwm
+definekey top C-M-S-e exec pkill evilwm
+
