@@ -1,13 +1,12 @@
+#escape  (default C-t)
+#escape Hyper_L  #Super_L
+escape F13 
 
 #options:  Taken from youtube "Ratpoison + EvilWM on Archlinux" video
 unmanage Feh
 unmanage gimp
 unmanage Mplayer
 
-
-#video
-exec conky
-#exec dzen2
 
 # workspaces
 exec rpws init 4 -k
@@ -17,59 +16,45 @@ bind F3 exec rpws 3
 bind F4 exec rpws 4
 
 
-## Frames
-set border 0
-set padding 0 0 0 17 
-#set fgcolor #ffffff
-#set bgcolor #505050
-#set bwcolor dig gray
-set bargravity n
-set barborder 0 
-set inputwidth   800
+msgwait 5
+set winfmt       %f%a%p%s%8t
+
+
+##  Frames
+set winname      class
 set transgravity center
-#set winname      class
-set winname name
-set winfmt %s%8t
+set gravity      center 
+set padding      0 0 0 0
+set boarder      0 0 0 0 
+set bgcolor      #444444
+set fgcolor      #878787
+set winliststyle row
+
+
+##  Bar
+set inputwidth   600
+set bargravity   c
+set barpadding   4 1 
+set barborder    0 
+set barinpadding 5
+set bwcolor      dig gray
+set fwcolor      #af0000
+
 
 #set font
 set font -*-Droid Sans-11
-#set bgcolor #2E3440
-#set fgcolor #D8DEE9
-
-
-
-#aliases ??
-# What is this???
-#alias ls exec ratpoison -c "echo $(~/bin/rpls)"
-
-
-
-#workspaces
-gnew main
-gnewbg dev
-gnewbg web
-gnewbg mails
-gnewbg stuff
-gmerge default
-gdelete default
-
+set resizeunit 4
 
 
 ## binding  (CAPSLock as an escape key
 #  exec xmodmap -e 'clear Lock' -e 'keycode 66 = F13'
-#escape F13
 
 #set wallpaper
-#exec feh --bg-scale Pictures/wallpapers/ocean.jpg
-#exec feh --bg-scale Pictures/wallpapers/brain.png
-#exec feh --bg-scale Pictures/wallpapers/.png
-exec feh --bg-scale Pictures/wallpapers/o3181026.png
+exec feh --bg-scale ~/Pictures/Wallpapers/o3181026.png
 
 #Java Swing Applications
 #see https://wiki.archlinux.org/index.php/Ratpoison/#Java_Swing_Applications
 #exec wmname LG3D
 
-
-definekey top C-M-e tmpwm evilwm
-definekey top C-M-S-e exec pkill evilwm
-
+exec conky
+#exec dzen2

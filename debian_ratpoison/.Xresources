@@ -1,11 +1,10 @@
 ! Atom One Light theme
 *.background: #f9f9f9
 *.foreground: #383a42
-!*.cursorColor: #d0d0d0
-x!*.cursorColor: magenta
+x*.cursorColor: magenta
 *.color0:  #000000
 *.color1:  #E45649
-!*.color2:  #50A14F
+*.color2:  #50A14F
 *.color2:  #434C5e
 *.color3:  #986801
 *.color4:  #4078F2
@@ -20,6 +19,26 @@ x!*.cursorColor: magenta
 *.color13: #A626A4
 *.color14: #0184BC
 *.color15: #ffffff
+
+! color taken from PaperColor github.com/NLKNguyen/papercolor-theme
+*.color0:  #eeeeee
+*.color1:  #af0000
+*.color2:  #008700
+*.color3:  #5f8700
+*.color4:  #0087af
+*.color5:  #878787
+*.color6:  #005f87
+*.color7:  #444444
+*.color8:  #bcbcbc
+*.color9:  #d70000
+*.color10: #5E81AC
+*.color11: #8700af
+*.color12: #e45649
+*.color13: #d75f00
+*.color14: #005faf
+*.color15: #005f87
+*.color16: #0087af
+*.color17: #008700
 
 !URxvt.font: xft:Source Code Pro:size=11
 URxvt.font: xft:Inconsolata:size=10

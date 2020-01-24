@@ -1,0 +1,68 @@
+{
+   "checksum": "8583524a3a852edf8cb71b8f0e4c5aed",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "0",
+            "guid": "d7d466c1-184c-45e0-8335-823652325b92",
+            "id": "5",
+            "name": "Debian.org",
+            "type": "url",
+            "url": "http://www.debian.org/"
+         }, {
+            "date_added": "0",
+            "guid": "a7448a1a-2da9-47ea-b9b7-ebef0377642e",
+            "id": "6",
+            "name": "Latest News",
+            "type": "url",
+            "url": "http://www.debian.org/News/"
+         }, {
+            "date_added": "0",
+            "guid": "c38ad3e1-72c2-404e-bad7-b1e5c280b507",
+            "id": "7",
+            "name": "Help",
+            "type": "url",
+            "url": "http://www.debian.org/support"
+         }, {
+            "date_added": "13224236115871351",
+            "guid": "3740f42b-fc34-4633-9559-56bd3e59030d",
+            "id": "9",
+            "name": "emacsclient - Emacs client starts in no windows mode - Emacs Stack Exchange",
+            "type": "url",
+            "url": "https://emacs.stackexchange.com/questions/3573/emacs-client-starts-in-no-windows-mode"
+         }, {
+            "date_added": "13224324087269569",
+            "guid": "2b213c80-cc4b-4e68-a71b-545f611d0862",
+            "id": "11",
+            "name": "HOWTO: Ratpoison Basic Configuration / Documentation / Dev1 Galaxy Forum",
+            "type": "url",
+            "url": "http://dev1galaxy.org/viewtopic.php?id=1695"
+         } ],
+         "date_added": "13223291131259699",
+         "date_modified": "13224324087269569",
+         "guid": "00000000-0000-4000-A000-000000000002",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13223291131259705",
+         "date_modified": "0",
+         "guid": "00000000-0000-4000-A000-000000000003",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13223291131259707",
+         "date_modified": "0",
+         "guid": "00000000-0000-4000-A000-000000000004",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}
