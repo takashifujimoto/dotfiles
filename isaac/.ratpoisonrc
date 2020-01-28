@@ -1,5 +1,4 @@
 exec conky
-#exec dzen2
 
 
 # workspaces
@@ -11,29 +10,25 @@ bind F4 exec rpws 4
 bind F5 exec rpws 5
 bind F6 exec rpws 6
 
-#set padding 0 24 0 0
 set padding 0 0 0 0
 
 #set font
-
 set font -*-Droid Sans-11
 set bgcolor #2E3440
 set fgcolor #D8DEE9
+
 
 set transgravity nw
 set bargravity nw
 set inputwidth 800
 set winname class
 
-# audio/volume
+
+# audio/volume  Thinkpad x2??s
 definekey top XF86AudioRaiseVolume exec amixer -q set PCM 5+ unmute; ratpoison -c "echo RaiseVolume +5"
 definekey top XF86AudioLowerVolume exec amixer -q set PCM 5- unmute; ratpoison -c "echo LowerVolume -5"
 definekey top XF86AudioRaise exec amixer -q set PCM toggle; ratopoison -c "echo [ MUTE ]"
 
 
-
 #set wallpaper
-#exec feh --bg-scale Pictures/wallpapers/ocean.jpg
-#exec feh --bg-scale Pictures/wallpapers/minecraft/o1229961.png
 exec feh --bg-scale Pictures/wallpapers/dimmy.png
-
