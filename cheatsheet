@@ -1,23 +1,38 @@
 * grep
 - [$ grep 'search_word' filename]   (grep find lines with "word' in the file)       | grep search
-- [$ grep -S word /etc/*]           (search FOR 'WORD' in all filES WITHIN /etc/ directory) | grep SEARCH 
+- [$ grep -S word /etc/*]           (search 'WORD' in all filES WITHIN /etc/ directory) | grep SEARCH 
 - [$ grep -R word /etc/*]           (search RECURSIVELY for 'word' in all files within /etc/ directory and subdirectory) | grep search 
+- [$ grep word *]                   (search all files in the directory)
 
 - resources:  linuxconfig.org/how-to-find-all-files-with-a-specific-text-using-linux-shell  | grep search files 
+
+
+
+[$ grep PTTERN /path/to/file]
+
+
+
 * bash shell command
 
 - C-l  : 'clear'                  ([$ clear]  to onaji)                             |bash shell shortcut
-- C-d  : 'exit'                   ([$ exit]   same)                                 |bash shell shortcut
+- C-d  : 'exit'                   ([$ exit]   same)                                 |bash hsell shortcut
 - [$ find $location$ -name $regex$]  (under "home", find files that has 'test')     |bash shell
 - [$ ls -lh ]    ( -lh : long format with READABLE FILE SIZE)                       |bash shell
 
 - first column d: directory, -: file, l: symbolic link
 - [$ sudo ln -s /path/to/your/link /real/file]  mking symbolic link.
 
+* ratpoison
+:vsplit m/n   (split vertically current frame will be m/n)     |ratpoison split frame vertically
+:hsplit m/n   (split horizontally)                             |ratpoison split frame horizontally
+:only         (C-t Q)                                           | ratpoison only remove frame
+:remove       (kill the current frame if there are more)        | ratpoison frame remove
+
 * tmux
 - 
 
-
+* vim
+- C-q     ( unfreese in X^ mode)    | vim freezes X^ mode
 
 
 * wget 
@@ -30,6 +45,12 @@
 - M-x ielm  (start ELISP>)     | emacs elisp lisp start repl
 - C-j       (execute elisp)    | emacs elisp lisp evaluate
 - C-x C-e   (eval-last-sexp, evaluates sexp before the cursor, and show result in mini-buffer)     | emacs elisp lisp  evaluate
+
+** org-mode
+- C-s           (schedule)   | emacs org-mode calendar schedule
+- C-d           (deadline)  | emacs org-mode calendar deadline date 
+- S-LEFT/RIGHT              | emacs org-mode calendar timestamp move forward backward
+
 
 ressources: yohshiy.blog.fc2.com/blog-category-30.html
 
