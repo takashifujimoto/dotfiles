@@ -1,0 +1,8 @@
+#xrdb -merge .Xresources
+
+#evilwm -bw 1 -bg brown -fg red -term rxvt-unicode 
+
+#feh --bg-scale ~/Pictures/Wallpapers/o3181026.png
+
+#exec xclock
+

@@ -1,0 +1,7 @@
+xrdb -merge .Xresources
+
+
+feh --bg-scale ~/Pictures/Wallpapers/o3181026.png
+
+# evilwm -bw 1 -bg brown -fg navy -term rxvt-unicode 
+

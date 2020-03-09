@@ -1,0 +1,56 @@
+#escape : default C-t
+escape Super_L
+
+#options:  Taken from youtube "Ratpoison + EvilWM on Archlinux" video
+unmanage Feh
+unmanage gimp
+unmanage Mplayer
+
+# workspaces
+exec rpws init 4 -k
+bind F1 exec rpws 1
+bind F2 exec rpws 2
+bind F3 exec rpws 3
+bind F4 exec rpws 4
+
+
+
+rpws
+## Frames
+#set padding 0 24 0 0
+set padding 0 0 0 0
+
+
+msgwait 8
+
+set winname name
+set winfmt %s%8t
+set barborder 0 
+set barpadding  0 0 
+set bargravity n
+set transgravity center
+set inputwidth   600
+set winname      class
+
+
+#set font
+set font -*-Droid Sans-11
+#set bgcolor #2E3440
+set bgcolor #444444
+#set fgcolor #D8DEE9
+set fgcolor #878787
+set bwcolor dig gray
+
+## binding  (CAPSLock as an escape key
+#  exec xmodmap -e 'clear Lock' -e 'keycode 66 = F13'
+#escape F13
+
+#set wallpaper
+exec feh --bg-scale ~/Pictures/Wallpapers/o3181026.png
+
+#Java Swing Applications
+#see https://wiki.archlinux.org/index.php/Ratpoison/#Java_Swing_Applications
+#exec wmname LG3D
+
+exec conky
+#exec dzen2
