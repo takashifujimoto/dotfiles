@@ -1,4 +1,5 @@
 * grep
+- $ grep -rnw . -e 'pattern'  (find all files that has the pattern)
 - [$ grep 'search_word' filename]   (grep find lines with "word' in the file)       | grep search
 - [$ grep -S word /etc/*]           (search FOR 'WORD' in all filES WITHIN /etc/ directory) | grep SEARCH 
 - [$ grep -R word /etc/*]           (search RECURSIVELY for 'word' in all files within /etc/ directory and subdirectory) | grep search 
