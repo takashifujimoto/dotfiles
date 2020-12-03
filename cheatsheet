@@ -15,9 +15,7 @@
 - [$ sudo ln -s /path/to/your/link /real/file]  mking symbolic link.
 
 ** tmux
-- 
-
-
+-  c-b, m-Right (resize pane)
 
 
 ** wget 
@@ -41,7 +39,7 @@ ressources: yohshiy.blog.fc2.com/blog-category-30.html
 
 ** UNIX as an IDE
 
-*** Listing FIles
+*** Listing Files
 - $ ls -t  (-time : last modification date, use when you wnat to most recent files changed.)     : UNIXIDE > Listing Files
 - $ ls -r  (-time : oldest modified files)                          : UNIXIDE > Listing Files
 
@@ -58,19 +56,24 @@ ressources: yohshiy.blog.fc2.com/blog-category-30.html
 - $ ls -XR | vim -   ????  
 
 
-*** findinf files
+*** find files
+- $ find .  (the target is file below current directory)
 - $ find .  (list all files )                                       : UNIXIDE > Finding Files 
 - $ find . -type d ( find directories )                             : UNIXIDE > Finding Files 
 - $ find . -type f (find files)                                     : UNIXIDE > Finding Files
 - $ find . | sort  (show files by name)
 - $ find . -ls | sort -k11, 11 ( -k option, sort by 11th column of output) : UNIXIDE > Finding Files 
-- $ find . -name '*.c"  (find  with the pattern)                    : UNIXIDE > Finding Files 
-- $ find -path '*test*'   (find by matching path)                   : UNIXIDE > Finding Files 
-- $ find -mtime -5   (find files edited within the last 5 days)     : UNIXIDE > Finding Files 
+- $ find . -name "*.c"  (find  with the pattern)                           : UNIXIDE > Finding Files 
+- $ find -path "*test*"   (find by matching path)                          : UNIXIDE > Finding Files 
+- $ find -mtime -5   (find files edited within the last 5 days)            : UNIXIDE > Finding Files 
 - $ find -newer foo.c   (find files modified more recently than foo.c):     UNIXIDE > Finding Files 
 - $ find -type d   (find directories)
 - $ find -type f   (find files)
 - $ find -type l   (find symbolik link)
+- $ find . -newer this_file.txt     (find file newer than this_file.txt)
+- $ find . -name "*abc*" -and -name "*def*" (find files or dir. with 'abc' and 'def')
+- $ find . -name "*abc*" -or -name "*def*" (find files or dir. with 'abc' or 'def')
+- $ find . -not -name "*abc*" (find files or dir. with 'abc' or 'def')
 
 *** searching files
 
