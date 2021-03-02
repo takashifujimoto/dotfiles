@@ -1,0 +1,132 @@
+* cheatsheet
+** bash
+$ for i in 1 2 3 4; do echo $i ; done
+$ for i in 1 2 3 4; do echo $i ; done > file
+$ while :; do date; done                   (: is a null commmand , same with true)
+$ while true; do date; sleep 1; done       (infinitely date, then sleep 1 sec)
+
+
+
+
+
+** grep
+
+- $ grep -rnw . -e 'pattern'      (find the 'pattern' in all files even under sub directories)                          ## grep find file with word pattern
+- $ grep -rn 'word' ./dir         (find all files that has the 'word' with line '-n'(number) )
+- $ grep 'search_word' filename   (grep find lines with "word' in the file)                                             ## grep search
+- $ grep -S word /etc/*           (search FOR 'WORD' in all filES WITHIN /etc/ directory)                               ## grep SEARCH 
+- $ grep -R word /etc/*           (search RECURSIVELY for 'word' in all files within /etc/ directory and subdirectory)  ## grep search 
+
+resources:  linuxconfig.org/how-to-find-all-files-with-a-specific-text-using-linux-shell                                    ## grep search files 
+
+
+** awk
+- pattern {action}                  (no pattern, then edit all the lines)
+
+** vim
+
+- c-q    ( unfreeze in ^X mode)                 ## vim frozen
+
+*** navigation
+
+*** edditing
+
+- /     (search)                                ## vim search
+- *     (search the current word)                               ## vim search
+- %s/before/after/gc        (substitute 'before' to 'after' globally confirm)  ## vim substitute replace search confirm
+
+*** view
+- :set wrap    (toggle word wrap)
+- :set nowrap  (toggle word nowrap)
+
+
+
+
+** git
+
+*** set up
+$ git config --global user.name "takashifujimoto"          ( initialize username )        ## git config username
+$ git config --global user.email "your.email@gmail.com"    ( initialize email address)    ## git config set email
+$ git config --list                                        ( check the config )           ## git config check
+
+*** repository
+$ git init     (make a new repository)   ## git repository version
+
+workflow:   init(make repository) -> add(staging) -> commit(version)-> :
+
+
+
+** bash shell command
+
+- C-l  : 'clear'                  ([$ clear]  to onaji)                                                                 ##bash shell shortcut
+- C-d  : 'exit'                   ([$ exit]   same)                                                                     ##bash shell shortcut
+- [$ find $location$ -name $regex$]  (under "home", find files that has 'test')                                         ##bash shell
+- [$ ls -lh ]    ( -lh : long format with READABLE FILE SIZE)                                                           ##bash shell
+
+- first column d: directory, -: file, l: symbolic link
+- [$ sudo ln -s /path/to/your/link /real/file]  mking symbolic link.
+
+** tmux
+-  c-b, m-Right (resize pane)
+
+
+** wget 
+- you can right click and copy $url$ in the browser then paste
+- [$ wget -c $url$]   ( -c 'continue' even there are errors.)          ## wget
+- [$ wget -q $url$]   ( -q 'quiet', it does not show the status)       ## wget
+
+** emacs
+
+- M-x ielm  (start ELISP>)     ## emacs elisp lisp start repl
+- C-j       (execute elisp)    ## emacs elisp lisp evaluate
+- C-x C-e   (eval-last-sexp, evaluates sexp before the cursor, and show result in mini-buffer)     ## emacs elisp lisp  evaluate
+
+ressources: yohshiy.blog.fc2.com/blog-category-30.html
+
+
+** bashscript
+
+- sed -i '1s/^.*#//;s/\r$//' filename (fix broken shebang line by dos2unix) | no such file or direcotry #!/bin/bash
+
+
+
+*** ls - Listing Files
+
+- $ ls -t  (-time : last modification date, use when you wnat to most recent files changed.)     : UNIXIDE > Listing Files
+- $ ls -r  (-time : oldest modified files)                          : UNIXIDE > Listing Files
+
+
+- $ ls -l | head  
+- $ ls -lt | sed 10q  (show last 10 files modified)
+
+- $ ls -X (group by eXtension)                                      : > Listing Files
+
+- $ ls -v  (naturally ? sort)
+- $ ls -S  (Size)
+- $ ls -R  (Recursively)
+- $ ls -XR |  -   ????  
+
+
+
+*** find files
+
+- $ find .  (the target is file below current directory)
+- $ find .  (list all files )                                       
+- $ find . -type d ( find directories )                            
+- $ find . -type f (find files)                                   
+- $ find . | sort  (show files by name)
+- $ find . -ls | sort -k11, 11 ( -k option, sort by 11th column of output) 
+- $ find . -name "*.c"  (find  with the pattern)                          
+- $ find -path "*test*"   (find by matching path)                        
+- $ find -mtime -5   (find files edited within the last 5 days)         
+- $ find -newer foo.c   (find files modified more recently than foo.c):     
+- $ find -type d   (find directories)
+- $ find -type f   (find files)
+- $ find -type l   (find symbolik link)
+- $ find . -newer this_file.txt     (find file newer than this_file.txt)
+- $ find . -name "*abc*" -and -name "*def*" (find files or dir. with 'abc' and 'def')
+- $ find . -name "*abc*" -or -name "*def*" (find files or dir. with 'abc' or 'def')
+- $ find . -not -name "*abc*" (find files or dir. with 'abc' or 'def')
+
+
+** 
