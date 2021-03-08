@@ -136,8 +136,8 @@ ressources: yohshiy.blog.fc2.com/blog-category-30.html
 \( \)           grouping            ex) a\(XY\)*b => aXYXYb, aXYXYXYb, ...              ## vim regex regular expression search
 \|              or                  ex) foo\|bar  => foo, bar                           ## vim regex regular expression search
 \{min, max}     repeat              ex) a\{3,5}   => aaa, aaaa, aaaaa                   ## vim regex regular expression search
-
-
+\([a-z]\+\) \+1 backreference       ex) \([a-z]\+\) \+1 backreference        (look for double words) repeating itself.
+grep -E "([a-z]+) +\1  file
 
 
 

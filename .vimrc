@@ -4,44 +4,30 @@
 
 call plug#begin('~/.vim/plugged')
 
-" ALE (Asynchronous Lint Engine) is a comprehensive code analysis 
-"Plug 'w0rp/ale'  only neovim
-
-" Multiple-cursors
-Plug 'terryma/vim-multiple-cursors'
-
+Plug 'w0rp/ale' " ALE (Asynchronous Lint Engine) is a comprehensive code analysis 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-
-
-"EMMET - html editor
 Plug 'mattn/emmet-vim'
-
-"CSS
-Plug 'hail2u/vim-css3-syntax'
+Plug 'hail2u/vim-css3-syntax'   
 Plug 'ap/vim-css-color'
 
-"reireias/vim-cheatsheet
-Plug 'reireias/vim-cheatsheet'
-let g:cheatsheet#cheat_file = '~/vimfiles/.cheatsheet.md'
-
-" On-demand loading
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-
+"Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 "Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 "https://www.reddit.com/r/vim/comments/96fp3x/windows_fzf_and_gvim/"
 "Plug 'junegunn/fzf', { 'dir': '~/.fzf' }
 "Plug 'junegunn/fzf.vim'
-
-" Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
-" https://github.com/airblade/vim-gitgutter
-
-"Solarized Color
-"Plug 'altercation/vim-colors-solarized'
+"Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
+"https://github.com/airblade/vim-gitgutter
+"Plug 'altercation/vim-colors-solarized' "Solarized Color
 
 Plug 'arcticicestudio/nord-vim'
+"Plug 'fatih/vim-go'                 "vim-go
+"Plug 'ncm2/ncm2-jedi'               "Python completion
+Plug 'davidhalter/jedi'              "Python completion
 
-"Plug 'fatih/vim-go'        "vim-go
+"Plug 'vim-syntastic/syntastic'
+Plug 'scrooloose/syntastic'
+
 
 " Initialize plugin system
 call plug#end()
@@ -50,10 +36,6 @@ call plug#end()
 "nnoremap <C-p> :FZF<CR>
 
 
-
-
-"Plug 'vim-syntastic/syntastic'
-Plug 'scrooloose/syntastic'
 
 " ESLint configuration
 set statusline+=%#warningmsg#
@@ -77,11 +59,10 @@ highlight link SyntasticWarningSign SignColumn
 highlight link SyntasticStyleErrorSign SignColumn
 highlight link SyntasticStyleWarningSign SignColumn
 
-" ncm2
- autocmd BuffEnter * call ncm2#enable_for_buffer()
- set completeopt=noinsert,menuone,noselect
- let g:python3_host_prog='/usr/bin/python3'
 
+"vim-go
+
+let g:python3_host_prog='/usr/bin/python3'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " experiement  実験  
