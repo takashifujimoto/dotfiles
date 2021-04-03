@@ -1,0 +1,11 @@
+URxvt.font: xft:monospace:size=10
+URxvt.scrollBar: false
+URxvt.background: rbba:0000/0000/0000/cccc
+URxvt.cursorColor: magenta
+URxvt.foreground: white
+#URxvt.transparent: true
+URxvt.shading: 10 
+URxvt.depth:30
+URxvt.cursorBlink: true
+
+

@@ -1,0 +1,33 @@
+" Use Vim settings, rather then Vi settings
+set nocompatible  
+
+"Tab
+set tabstop=4		" set tab width
+set shiftwidth=4
+set expandtab
+"Softtabs 4 spaces
+
+set hlsearch      " highlight matches
+set incsearch
+
+
+" no beep sound
+set noerrorbells visualbell t_vb=
+" status on the bottom.
+set laststatus=2
+
+"============= experiement  ?? ================================
+
+" Get off my lawn - helpful when learning Vim :) Disable the arrow key.
+nnoremap <Left> :echoe "Use h"<CR>
+nnoremap <Right> :echoe "Use l"<CR>
+nnoremap <Up> :echoe "Use k"<CR>
+nnoremap <Down> :echoe "Use j"<CR>
+
+"inoremap <c-[> <esc>
+"inoremap qq <esc>
+inoremap <c-n> <Down>
+inoremap <c-p> <Up>
+
+
+

@@ -1,0 +1,4 @@
+﻿" カラー・スキーム
+" Windws: %HOME%\vimfiles\colors　このファイルをバックアップしろ。
+colorscheme Solarized
+set background=dark

@@ -1,0 +1,8 @@
+fontname "sans-serif:pixelsize14:bold"
+
+sticky yes
+
+autogroup 3 "aterm,XTerm"
+autogroup 3 "xterm,XTerm"
+
+

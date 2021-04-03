@@ -4,7 +4,7 @@ $ for i in 1 2 3 4; do echo $i ; done
 $ for i in 1 2 3 4; do echo $i ; done > file
 $ while :; do date; done                   (: is a null commmand , same with true)
 $ while true; do date; sleep 1; done       (infinitely date, then sleep 1 sec)
-
+$ ln -s path/to/directory_or_file ln_name  (make a symolic link to the path with the ln_name)
 
 
 
@@ -129,6 +129,7 @@ ressources: yohshiy.blog.fc2.com/blog-category-30.html
 - $ find . -not -name "*abc*" (find files or dir. with 'abc' or 'def')
 
 
+<<<<<<< HEAD
 *** Regular Expressions
 
 ^ begining of line
@@ -143,3 +144,18 @@ grep "^[0-9] filename       lines begin with number
 e 
 jj
 grep -E "[0-9]$" t           ?? Does not return anything.  Hoping to retrieve line that ENDS with NUMBER.
+=======
+** Vim Regular Expressions
+
+\<              beginning of word   ex) \<for => fork, form.  cex) reform, California   ## vim regex regular expression search
+\>              end of word         ex) ak\>  => peak         cex) peaks, peekaboo      ## vim regex regular expression search
+\( \)           grouping            ex) a\(XY\)*b => aXYXYb, aXYXYXYb, ...              ## vim regex regular expression search
+\|              or                  ex) foo\|bar  => foo, bar                           ## vim regex regular expression search
+\{min, max}     repeat              ex) a\{3,5}   => aaa, aaaa, aaaaa                   ## vim regex regular expression search
+\([a-z]\+\) \+1 backreference       ex) \([a-z]\+\) \+1 backreference        (look for double words) repeating itself.
+grep -E "([a-z]+) +\1  file
+
+
+
+
+>>>>>>> 217df06ad604be82b9e24cf8b9878651df9fa8e3
