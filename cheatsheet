@@ -129,4 +129,17 @@ ressources: yohshiy.blog.fc2.com/blog-category-30.html
 - $ find . -not -name "*abc*" (find files or dir. with 'abc' or 'def')
 
 
-** 
+*** Regular Expressions
+
+^ begining of line
+[^0-9] NOT number
+[^a-z] NOT a-z
+
+vim search:   /^[0-9]       number at begining of line
+vim search:   /[^0-9]       all characters NOT number
+
+grep "^[0-9] filename       lines begin with number
+
+e 
+jj
+grep -E "[0-9]$" t           ?? Does not return anything.  Hoping to retrieve line that ENDS with NUMBER.
